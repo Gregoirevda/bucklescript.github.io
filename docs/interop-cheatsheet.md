@@ -101,7 +101,7 @@ external getElementById : string -> element option = "getElementById" [@@bs.scop
 Reason syntax:
 
 ```reason
-[@bs.scope "document"] [@bs.return nullable]
+[@bs.val] [@bs.scope "document"] [@bs.return nullable]
 external getElementById : string => option(element) = "getElementById";
 ```
 
