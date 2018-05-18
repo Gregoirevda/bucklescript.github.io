@@ -95,7 +95,7 @@ let result3: option(int) = Js.Nullable.toOption(Js.Nullable.return(10));
 Directly convert from `Js.Nullable.t` to `option`:
 
 ```ocaml
-external getElementById : string -> element option = "getElementById" [@@bs.scope "document"][@@bs.return nullable]
+external getElementById : string -> element option = "getElementById" [@@bs.val][@@bs.scope "document"][@@bs.return nullable]
 ```
 
 Reason syntax:
